@@ -1,5 +1,6 @@
 import requests
 
+
 data = {
     "name": "111"
 }
@@ -16,5 +17,3 @@ for city in city_list:
     print(r.text)
     file_check.write(f'{city[0:-1]} {r.text}\n')
 file_check.close()
-# print(r.status_code)
-# print(r.text)
